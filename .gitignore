@@ -21,3 +21,23 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Environment variables
+.env
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Demo and development files
+clear-data.js
+DEMO_SCRIPT.md
+
+# Logs
+logs
+*.log
+
+# Optional eslint cache
+.eslintcache

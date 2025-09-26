@@ -1,46 +1,118 @@
-# Getting Started with Create React App
+# AI Interview Assistant
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, AI-powered interview platform built with React and OpenAI that streamlines the technical interview process for both candidates and interviewers.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+### For Candidates (Interviewee Experience)
+- **Smart Resume Upload**: Supports PDF and DOCX formats with automatic text extraction
+- **Contact Info Extraction**: AI automatically parses and extracts candidate details
+- **Personalized Questions**: 6 AI-generated technical questions tailored to your resume
+- **Real-time Chat Interface**: Modern, responsive chat-based interview experience
+- **Timed Questions**: Difficulty-based time limits (Easy: 3min, Medium: 7min, Hard: 15min)
+- **Progress Tracking**: Visual progress indicators and question counters
 
-### `npm start`
+### For Interviewers (Dashboard)
+- **Candidate Management**: Complete dashboard with search, filter, and sort capabilities
+- **AI-Powered Scoring**: Automatic evaluation of candidate responses with detailed analysis
+- **Interview Analytics**: Question-by-question breakdown with individual scores
+- **Final Assessment**: Comprehensive AI-generated hiring recommendations
+- **Data Persistence**: All interview data saved locally for review
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🛠️ Technology Stack
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Frontend**: React 18 with TypeScript
+- **State Management**: Redux Toolkit with Redux Persist
+- **UI Framework**: Ant Design with custom theming
+- **AI Integration**: OpenAI GPT-3.5-turbo API
+- **File Processing**: PDF.js for PDF parsing, Mammoth for DOCX
+- **Styling**: Modern CSS with Inter font family
+- **Build Tool**: Create React App
 
-### `npm test`
+## 📋 Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js 16 or higher
+- npm or yarn
+- OpenAI API key
 
-### `npm run build`
+## ⚡ Quick Start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/vivekchavan14/swipe-assignment.git
+   cd swipe-assignment
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Set up environment variables**
+   ```bash
+   # Create .env file in root directory
+   echo "REACT_APP_OPENAI_API_KEY=your_openai_api_key_here" > .env
+   ```
 
-### `npm run eject`
+4. **Start the development server**
+   ```bash
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+5. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🎯 How It Works
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Interview Flow
+1. **Upload Resume**: Candidate uploads PDF/DOCX resume
+2. **Profile Setup**: Complete any missing contact information
+3. **AI Question Generation**: System generates 6 personalized technical questions
+4. **Interactive Interview**: Real-time chat-based Q&A with timers
+5. **AI Evaluation**: Automatic scoring and detailed feedback
+6. **Results Dashboard**: Comprehensive analytics for interviewers
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Key Highlights
+- **Intelligent Personalization**: Questions are dynamically generated based on resume content
+- **Fair Evaluation**: Consistent AI-powered scoring eliminates interviewer bias
+- **Modern UX**: Beautiful, responsive design with smooth animations
+- **Local Data Storage**: No external database required, all data persists locally
+- **Scalable Architecture**: Clean, maintainable React codebase
 
-## Learn More
+## 🏗️ Architecture
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+src/
+├── components/
+│   ├── interviewee/     # Candidate-facing components
+│   └── interviewer/     # Dashboard components
+├── store/               # Redux state management
+├── utils/               # AI service and resume parsing
+├── hooks/               # Custom React hooks
+└── types/               # TypeScript definitions
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🔧 Configuration
+
+The application uses environment variables for configuration:
+
+- `REACT_APP_OPENAI_API_KEY`: Your OpenAI API key for AI features
+
+## 📱 Browser Support
+
+- Chrome (recommended)
+- Firefox
+- Safari
+- Edge
+
+## 🤝 Contributing
+
+This project was built as part of the Swipe assignment. For any questions or suggestions, please create an issue.
+
+## 📄 License
+
+MIT License - feel free to use this code for your projects.
+
+---
+
+Built with ❤️ using React, TypeScript, and OpenAI
