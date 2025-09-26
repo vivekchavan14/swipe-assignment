@@ -2,7 +2,7 @@
 
 A modern, AI-powered interview platform built with React and OpenAI that streamlines the technical interview process for both candidates and interviewers.
 
-## 🚀 Features
+## Features
 
 ### For Candidates (Interviewee Experience)
 - **Smart Resume Upload**: Supports PDF and DOCX formats with automatic text extraction
@@ -19,7 +19,7 @@ A modern, AI-powered interview platform built with React and OpenAI that streaml
 - **Final Assessment**: Comprehensive AI-generated hiring recommendations
 - **Data Persistence**: All interview data saved locally for review
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Frontend**: React 18 with TypeScript
 - **State Management**: Redux Toolkit with Redux Persist
@@ -29,13 +29,13 @@ A modern, AI-powered interview platform built with React and OpenAI that streaml
 - **Styling**: Modern CSS with Inter font family
 - **Build Tool**: Create React App
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Node.js 16 or higher
 - npm or yarn
 - OpenAI API key
 
-## ⚡ Quick Start
+## Quick Start
 
 1. **Clone the repository**
    ```bash
@@ -62,7 +62,7 @@ A modern, AI-powered interview platform built with React and OpenAI that streaml
 5. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
-## 🎯 How It Works
+## How It Works
 
 ### Interview Flow
 1. **Upload Resume**: Candidate uploads PDF/DOCX resume
@@ -79,7 +79,7 @@ A modern, AI-powered interview platform built with React and OpenAI that streaml
 - **Local Data Storage**: No external database required, all data persists locally
 - **Scalable Architecture**: Clean, maintainable React codebase
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 src/
@@ -98,21 +98,4 @@ The application uses environment variables for configuration:
 
 - `REACT_APP_OPENAI_API_KEY`: Your OpenAI API key for AI features
 
-## 📱 Browser Support
 
-- Chrome (recommended)
-- Firefox
-- Safari
-- Edge
-
-## 🤝 Contributing
-
-This project was built as part of the Swipe assignment. For any questions or suggestions, please create an issue.
-
-## 📄 License
-
-MIT License - feel free to use this code for your projects.
-
----
-
-Built with ❤️ using React, TypeScript, and OpenAI
